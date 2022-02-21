@@ -1,0 +1,44 @@
+body {
+    background-color: #36dff6;
+  }
+  h1 {text-align: left; 
+      font-style: normal; 
+      font-weight:normal; 
+      font-size: 50px;
+      line-height: 1.5; 
+      margin-top: .5em; 
+      margin-bottom: .5em;
+  }
+  
+  h1 {
+      font-family: cursive;
+  }
+  
+  h2 {
+      font-size: 30px;
+      margin-bottom: 1%;
+      margin-left:2%;
+  }
+
+  .avatar {
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px #ddd;
+    float: left;
+    margin-right: 6%;
+  }
+  .texts {
+    font-family: 'Indie Flower', cursive;
+  }
+.container {
+    width: 65%;
+    float: left;
+    height: 100%;
+}
+  #sidebar{
+    width: 25%;
+    float:right;
+    background-color: red;
+  }

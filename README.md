@@ -21,4 +21,9 @@ repository and (C) 2013 Abram Hindle visibile in the text.
 
 Code is licensed under the Apache 2.0 license.
 
+Copyright[2022] [Mingwei Lu]
 
+references:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span
+https://www.w3schools.com/howto/howto_js_topnav.asp
+https://www.w3schools.com/howto/howto_js_slideshow.asp

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mingwei's first homepage</title>
+        <link rel="stylesheet" href="bad.css">
+    </head>
+    <body>
+        <h1 data-content-field="site-title" class="site-title">
+            <a>Mingwei Lu</a>
+        </h1>
+        
+        <div class="topnav">
+            <a href="#reason">Reason</a>
+            <a href="#history">History</a>
+            <a class="active">Home</a>
+        </div>
+        <div class="container">
+            <p>
+                <img src="photos/profilePic.jpeg" alt="Avatar" class="avatar">
+                <div id="intro" class="texts">
+                    <h2>About Me</h2>
+                    <span class="ingredient">Mingwei is a third-year Computing Science Honors student at the University of Alberta, in Edmonton, Alberta, Canada. I love hiking, cooking, programming and photography. </span>
+                </div>
+            </p>
+            <hr>
+            <p>
+                <div id="history" class="texts">
+                    <h2>Professional History</h2>
+                    <ul>
+                        <li><a>In 2017, Received the Second Prize at Provincial Level in the Chinese Mathematical Olympiad in Senior (CMO)</a></li>
+                        <li><a>In 2017, Received Provincial Level Second Prize in the Chinese Physics Olympiad in Senior (CPhO)</a></li>
+                        <li><a>In 2017, Received Provincial-level Second Prize in the Biology Olympiad</a></li>
+                        <li><a>In 2016, Received Provincial-level Second Prize in the Chemistry Olympiad</a></li>
+                        <li><a>2019-Now, study at the University of Alberta</a></li>
+                    </ul>
+                </div>
+            </p>
+            <hr>
+            <p>
+                <div id="reason" class="texts">
+                    <h2>Why You Should Hire Me</h2>
+                    <ul>
+                        <li><a>Skillful in using Programming Languages like Python3, Java, C/C++, Matlab, etc. </a></li>
+                        <li><a>Skillful in using git and Github.</a></li>
+                        <li><a>Skillful in using command lines in Mac OS/Linux.</a></li>
+                        <li><a>Proficient in using SQL, familiar with SQL Server and Mongo DB.</a></li>
+                    </ul>
+                </div>
+            </p>
+            
+        </div>
+        <div id="sidebar">
+            <h2>Contact:</h2>
+            <ul class="texts">
+                <li>Email: <a href="mailto:mlu1@ualberta.ca">mlu1@ualberta.ca</a></li>
+                <li>Phone: <a href="tel:15873726926">+1 587-372-6926</a></li>
+                <li><span>Mailing Address: 8436 117 St NW, Edmonton, Alberta, CA</span></li>
+                <li><a href="https://www.instagram.com/invites/contact/?i=1rn9lv9psjp84&utm_content=8xq8z3m">Instagram</a></li>
+            </ul>
+        </div>
+
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="photos/IMG_4485.jpg" style="width:100%">
+              <div class="text">picture of my hometown</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="photos/IMG_4486.jpg" style="width:100%">
+              <div class="text">picture of my hometown</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="photos/IMG_4487.jpg" style="width:100%">
+              <div class="text">picture of my hometown</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="photos/IMG_4488.jpg" style="width:100%">
+                <div class="text">picture of my hometown</div>
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+          
+          <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+        
+    </body>
+
+</html>
