@@ -23,6 +23,8 @@ Code is licensed under the Apache 2.0 license.
 
 Copyright[2022] [Mingwei Lu]
 
+I deleted the original style and added a link to the css file I created.
+
 references:
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span
 https://www.w3schools.com/howto/howto_js_topnav.asp
